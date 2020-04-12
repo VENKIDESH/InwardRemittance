@@ -3,6 +3,7 @@ Developing an Inward remittance platform.
 
 ## Set up
 Add Moesif origin & CORS changer extension.
+https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc
 
 To set up this project, first clone the repository
 ```bash
