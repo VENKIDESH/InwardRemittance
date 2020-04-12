@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 const BCoins = ({bCoins}) => {
     const classes = useStyles();
     return (
-    <Box width="100%">
+    
         <Box width="50%" >
             <Typography align="center" style={{fontWeight:"bolder", fontSize:"20px"}}>Binance Coin Conversion List</Typography>
     <TableContainer component={Paper}>
@@ -41,7 +41,7 @@ const BCoins = ({bCoins}) => {
         </TableBody>
       </Table>
     </TableContainer></Box>
-    </Box>
+    
     )
 };
 

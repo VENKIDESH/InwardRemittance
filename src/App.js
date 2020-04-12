@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
 import BCoins from './components/bCoins';
+import WCoins from './components/wCoins';
+import { Box } from '@material-ui/core';
 
 
 class App extends Component {
     render() {
         return (
-            <div>
+            <Box display="flex" flexflow="row">
             <BCoins bCoins={this.state.bCoins} />
-            </div>
+            <WCoins wCoins={this.state.wCoins} />
+            </Box>
         )
     }
 
@@ -26,7 +29,7 @@ class App extends Component {
         fetch('https://api.wazirx.com/api/v2/tickers')
             .then(res => res.json())
             .then((data) => {
-                this.setState({ wCoins: data })
+                this.setState({ wCoins: data.btcinr })
             })
             .catch(console.log)
     }

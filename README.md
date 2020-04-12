@@ -2,6 +2,8 @@
 Developing an Inward remittance platform.
 
 ## Set up
+Add Moesif origin & CORS changer extension.
+
 To set up this project, first clone the repository
 ```bash
 $ git clone https://github.com/VENKIDESH/InwardRemittance.git
