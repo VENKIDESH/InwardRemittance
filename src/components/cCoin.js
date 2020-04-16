@@ -15,11 +15,12 @@ const useStyles = makeStyles({
   },
 });
 
-const WCoins = ({wCoins}) => {
+const CCoins = ({cCoins}) => {
     const classes = useStyles();
     return (
-      <Box width="33%" >
-            <Typography align="center" style={{fontWeight:"bolder", fontSize:"20px"}}>Bittrex Coin Conversion List</Typography>
+    
+        <Box width="33%" >
+            <Typography align="center" style={{fontWeight:"bolder", fontSize:"20px"}}>cex Coin Conversion List</Typography>
     <TableContainer component={Paper}>
       <Table className={classes.table} size="small" aria-label="a dense table">
         <TableHead>
@@ -29,12 +30,12 @@ const WCoins = ({wCoins}) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {wCoins.map((wCoin) => (
-            <TableRow key={wCoin.MarketName}>
+          {cCoins.map((cCoin) => (
+            <TableRow key={cCoin.symbol1}>
               <TableCell component="th" scope="row">
-                {wCoin.MarketName}
+                {cCoin.symbol1}/{cCoin.symbol2}
               </TableCell>
-              <TableCell align="right">{wCoin.Last}</TableCell>
+              <TableCell align="right">{cCoin.maxPrice}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -44,4 +45,4 @@ const WCoins = ({wCoins}) => {
     )
 };
 
-export default WCoins
+export default CCoins
