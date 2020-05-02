@@ -17,6 +17,14 @@ const useStyles = makeStyles({
 
 const Tables = (props) => {
   const classes = useStyles();
+  if(((props.btcInr.last-( props.usdtBtc.last*props.usdtInr.rate))/( props.usdtBtc.last*props.usdtInr.rate)*100)>6){alert("Yo its the best time to take some BTc to India")}
+  if(((props.btcInr.last-( props.usdtBtc.last*props.usdtInr.rate))/( props.usdtBtc.last*props.usdtInr.rate)*100)<1){alert("Yo its the best time to take some BTc from India")}
+  if(((props.ethInr.last-( props.usdtEth.last*props.usdtInr.rate))/( props.usdtEth.last*props.usdtInr.rate)*100)>6){alert("Yo its the best time to take some ETH to India")}
+  if(((props.ethInr.last-( props.usdtEth.last*props.usdtInr.rate))/( props.usdtEth.last*props.usdtInr.rate)*100)<1){alert("Yo its the best time to take some ETH from India")}
+  if(((props.xrpInr.last-( props.usdtXrp.last*props.usdtInr.rate))/( props.usdtXrp.last*props.usdtInr.rate)*100)>6){alert("Yo its the best time to take some XRP to India")}
+  if(((props.xrpInr.last-( props.usdtXrp.last*props.usdtInr.rate))/( props.usdtXrp.last*props.usdtInr.rate)*100)<1){alert("Yo its the best time to take some XRP from India")}
+  if(((props.ltcInr.last-( props.usdtLtc.last*props.usdtInr.rate))/( props.usdtLtc.last*props.usdtInr.rate)*100)>6){alert("Yo its the best time to take some LTC to India")}
+  if(((props.ltcInr.last-( props.usdtLtc.last*props.usdtInr.rate))/( props.usdtLtc.last*props.usdtInr.rate)*100)<1){alert("Yo its the best time to take some LTC from India")}
   return (
     <Box width="100%">
       <Typography
@@ -37,7 +45,7 @@ const Tables = (props) => {
                 Conversion Between
               </TableCell>
               <TableCell align="center" style={{ fontWeight: "bolder" }}>
-                CEX.io (USDT)
+                CEX.io (USD)
               </TableCell>
               <TableCell align="center" style={{ fontWeight: "bolder" }}>
                 CEX.io (Inr)
@@ -56,85 +64,85 @@ const Tables = (props) => {
           <TableBody>
             <TableRow key="1">
               <TableCell component="th" scope="row" align="center">
-                USDT > BTC > Inr
+                USD > BTC > Inr
               </TableCell>
               <TableCell component="th" scope="row" align="center">
               {props.usdtBtc.last}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-              {props.usdtBtc.last*props.usdtInr.last}
+              {(props.usdtBtc.last*props.usdtInr.rate).toFixed(3)}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
               {props.btcInr.last}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-                {props.btcInr.last-( props.usdtBtc.last*props.usdtInr.last)}
+                {(props.btcInr.last-( props.usdtBtc.last*props.usdtInr.rate)).toFixed(3)}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-              {((props.btcInr.last-( props.usdtBtc.last*props.usdtInr.last))/( props.usdtBtc.last*props.usdtInr.last)*100)}
+              {((props.btcInr.last-( props.usdtBtc.last*props.usdtInr.rate))/( props.usdtBtc.last*props.usdtInr.rate)*100).toFixed(3)}%
               </TableCell>
             </TableRow>
 
             <TableRow key="2">
               <TableCell component="th" scope="row" align="center">
-                USDT > ETH > Inr
+                USD > ETH > Inr
               </TableCell>
               <TableCell component="th" scope="row" align="center">
               {props.usdtEth.last}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-              {props.usdtEth.last*props.usdtInr.last}
+              {(props.usdtEth.last*props.usdtInr.rate).toFixed(3)}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
               {props.ethInr.last}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-                {props.ethInr.last-( props.usdtEth.last*props.usdtInr.last)}
+                {(props.ethInr.last-( props.usdtEth.last*props.usdtInr.rate)).toFixed(3)}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-              {((props.ethInr.last-( props.usdtEth.last*props.usdtInr.last))/( props.usdtEth.last*props.usdtInr.last)*100)}
+              {((props.ethInr.last-( props.usdtEth.last*props.usdtInr.rate))/( props.usdtEth.last*props.usdtInr.rate)*100).toFixed(3)}%
               </TableCell>
             </TableRow>
 
             <TableRow key="3">
               <TableCell component="th" scope="row" align="center">
-                USDT > XRP > Inr
+                USD > XRP > Inr
               </TableCell>
               <TableCell component="th" scope="row" align="center">
               {props.usdtXrp.last}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-              {props.usdtXrp.last*props.usdtInr.last}
+              {(props.usdtXrp.last*props.usdtInr.rate).toFixed(3)}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
               {props.xrpInr.last}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-                {props.xrpInr.last-( props.usdtXrp.last*props.usdtInr.last)}
+                {(props.xrpInr.last-( props.usdtXrp.last*props.usdtInr.rate)).toFixed(3)}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-              {((props.xrpInr.last-( props.usdtXrp.last*props.usdtInr.last))/( props.usdtXrp.last*props.usdtInr.last)*100)}
+              {((props.xrpInr.last-( props.usdtXrp.last*props.usdtInr.rate))/( props.usdtXrp.last*props.usdtInr.rate)*100).toFixed(3)}%
               </TableCell>
             </TableRow>
 
             <TableRow key="4">
               <TableCell component="th" scope="row" align="center">
-                USDT > LTC > Inr
+                USD > LTC > Inr
               </TableCell>
               <TableCell component="th" scope="row" align="center">
               {props.usdtLtc.last}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-              {props.usdtLtc.last*props.usdtInr.last}
+              {(props.usdtLtc.last*props.usdtInr.rate).toFixed(3)}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
               {props.ltcInr.last}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-                {props.ltcInr.last-( props.usdtLtc.last*props.usdtInr.last)}
+                {(props.ltcInr.last-( props.usdtLtc.last*props.usdtInr.rate)).toFixed(3)}
               </TableCell>
               <TableCell component="th" scope="row" align="center">
-              {((props.ltcInr.last-( props.usdtLtc.last*props.usdtInr.last))/( props.usdtLtc.last*props.usdtInr.last)*100)}
+              {((props.ltcInr.last-( props.usdtLtc.last*props.usdtInr.rate))/( props.usdtLtc.last*props.usdtInr.rate)*100).toFixed(3)}%
               </TableCell>
             </TableRow>
           </TableBody>
