@@ -11,7 +11,10 @@
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.5"
   },
+  "homepage": "http://VENKIDESH.github.io/InwardRemittance",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
