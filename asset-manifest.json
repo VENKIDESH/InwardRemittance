@@ -1,13 +1,13 @@
 {
   "main.css": "/InwardRemittance/static/css/main.55467e4a.chunk.css",
-  "main.js": "/InwardRemittance/static/js/main.c0d7ca10.chunk.js",
-  "main.js.map": "/InwardRemittance/static/js/main.c0d7ca10.chunk.js.map",
+  "main.js": "/InwardRemittance/static/js/main.f16f1d26.chunk.js",
+  "main.js.map": "/InwardRemittance/static/js/main.f16f1d26.chunk.js.map",
   "runtime~main.js": "/InwardRemittance/static/js/runtime~main.cb9308e7.js",
   "runtime~main.js.map": "/InwardRemittance/static/js/runtime~main.cb9308e7.js.map",
-  "static/js/2.3eb84697.chunk.js": "/InwardRemittance/static/js/2.3eb84697.chunk.js",
-  "static/js/2.3eb84697.chunk.js.map": "/InwardRemittance/static/js/2.3eb84697.chunk.js.map",
+  "static/js/2.d09e6556.chunk.js": "/InwardRemittance/static/js/2.d09e6556.chunk.js",
+  "static/js/2.d09e6556.chunk.js.map": "/InwardRemittance/static/js/2.d09e6556.chunk.js.map",
   "index.html": "/InwardRemittance/index.html",
-  "precache-manifest.6fba404dea5c88b4660c9361f6817bb0.js": "/InwardRemittance/precache-manifest.6fba404dea5c88b4660c9361f6817bb0.js",
+  "precache-manifest.851e0afdb653293808363109bb6c9f96.js": "/InwardRemittance/precache-manifest.851e0afdb653293808363109bb6c9f96.js",
   "service-worker.js": "/InwardRemittance/service-worker.js",
   "static/css/main.55467e4a.chunk.css.map": "/InwardRemittance/static/css/main.55467e4a.chunk.css.map"
 }
